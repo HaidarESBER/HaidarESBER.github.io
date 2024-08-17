@@ -110,14 +110,14 @@ function triggerFadeOutAndShowActionPage(language) {
           actionPrompt.textContent = "What would you like to do?";
           requestServicesButton.textContent = "Request Services";
           viewPortfolioButton.textContent = "View Portfolio";
-          requestServicesButton.setAttribute('data-url', 'interactive/servicesen.html');
-          viewPortfolioButton.setAttribute('data-url', 'interactive/portfolioen.html');
+          requestServicesButton.setAttribute('data-url', 'Interactive/servicesen.html');
+          viewPortfolioButton.setAttribute('data-url', 'Interactive/portfolioen.html');
       } else if (language === 'fr') {
           actionPrompt.textContent = "Que voulez-vous faire ?";
           requestServicesButton.textContent = "Demander des services";
           viewPortfolioButton.textContent = "Voir le portfolio";
-          requestServicesButton.setAttribute('data-url', '/interactive/services.html');
-          viewPortfolioButton.setAttribute('data-url', 'interactive/portfolio.html');
+          requestServicesButton.setAttribute('data-url', 'Interactive/services.html');
+          viewPortfolioButton.setAttribute('data-url', 'Interactive/portfolio.html');
       }
 
       actionPage.classList.add('visible'); // Make the action page interactable

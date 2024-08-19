@@ -4,8 +4,8 @@ gsap.fromTo(
   {
     opacity: 0,
     display: "none",
-    duration: 1.5,
-    delay: 3.5,
+    duration: 2.5,
+    delay: 3,
   }
 );
 
@@ -143,3 +143,12 @@ function triggerFadeOutAndRedirect(url) {
   }, 1000); // Match this duration with the fadeOut animation duration
 }
 
+
+
+        // Force a page refresh if the page is loaded from the cache (e.g., using the back button)
+        window.addEventListener('pageshow', function(event) {
+            if (event.persisted) {
+                window.location.reload();
+            }
+        });
+ 
